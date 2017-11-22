@@ -1,0 +1,14 @@
+Woolworths\Pages\WelcomePage.class
+Woolworths\Pages\LoginPage.class
+Woolworths\Common\PageHelper.class
+Woolworths\Pages\HomePage.class
+Woolworths\Hooks\Hook.class
+Woolworths\Steps\ScanSteps.class
+Woolworths\Base\DriverBase.class
+Woolworths\TestRunner.class
+Woolworths\Steps\HomeSteps.class
+Woolworths\Pages\TermsAndConditionsPage.class
+Woolworths\Steps\MenuSteps.class
+Woolworths\Steps\LoginSteps.class
+Woolworths\Pages\MenuPage.class
+Woolworths\Base\PageBase.class

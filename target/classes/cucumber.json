@@ -1,0 +1,179 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Add 1 Product to Cart",
+        "description": "",
+        "id": "add-products-to-cart;add-1-product-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3550734102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 50945720154,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1576071966,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3516263641,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4072034867,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "When I accept the terms and conditions",
+            "match": {
+              "location": "HomeSteps.whenIAcceptTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1312031925,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to see the Home Page",
+            "match": {
+              "location": "HomeSteps.iShouldBeAbleToSeeTheHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1643896757,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open the scanner",
+            "match": {
+              "location": "ScanSteps.iOpenTheScanner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61664376676,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Can\u0027t locate an element by this strategy: Locator map: \n- native content: \"By.id: com.woolworths.scango:id/manualEntry\" \n- html content: \"by id or name \"ManualBarCodeIcon\"\"\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027SweetHome\u0027, ip: \u0027172.18.1.224\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: driver.version: unknown\r\n\tat io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:110)\r\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:57)\r\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.toString(\u003cgenerated\u003e)\r\n\tat java.lang.String.valueOf(String.java:2994)\r\n\tat java.lang.StringBuilder.append(StringBuilder.java:131)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:701)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:257)\r\n\tat Woolworths.Pages.ScannerPage.EnterBarcodeDetails(ScannerPage.java:47)\r\n\tat Woolworths.Steps.ScanSteps.iEnterTheBarcodeManually(ScanSteps.java:32)\r\n\tat ✽.And I enter the 4210201002994 manually(AddProductsToCart.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "I enter the 4210201002994 manually",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4210201002994",
+                  "offset": 12
+                }
+              ],
+              "location": "ScanSteps.iEnterTheBarcodeManually(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I should see the product Oral B Professional Care Powered Toothbrush 500 each 99 99 added to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Oral B Professional Care Powered Toothbrush 500 each",
+                  "offset": 25
+                },
+                {
+                  "val": "99",
+                  "offset": 78
+                },
+                {
+                  "val": "99",
+                  "offset": 81
+                }
+              ],
+              "location": "ProductInformationSteps.iShouldSeeTheProductAddedToTheCart(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Products to Cart",
+    "description": "",
+    "id": "add-products-to-cart",
+    "keyword": "Feature",
+    "uri": "AddProductsToCart.feature"
+  },
+  {
+    "line": 1,
+    "name": "Login",
+    "description": "As a User\r\nI should be able to access the Scan And Go app with valid credentials",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

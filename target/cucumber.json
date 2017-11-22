@@ -1,0 +1,585 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Add 1 Product to Cart",
+        "description": "",
+        "id": "add-products-to-cart;add-1-product-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3519024459,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 52990101508,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1331400846,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2618462674,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2744995054,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "When I accept the terms and conditions",
+            "match": {
+              "location": "HomeSteps.whenIAcceptTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1142203104,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to see the Home Page",
+            "match": {
+              "location": "HomeSteps.iShouldBeAbleToSeeTheHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2295293395,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open the scanner",
+            "match": {
+              "location": "ScanSteps.iOpenTheScanner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9809317933,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter the 4210201002994 manually",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4210201002994",
+                  "offset": 12
+                }
+              ],
+              "location": "ScanSteps.iEnterTheBarcodeManually(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2802287597,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the product Oral B Professional Care Powered Toothbrush 500 each 99 99 added to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Oral B Professional Care Powered Toothbrush 500 each",
+                  "offset": 25
+                },
+                {
+                  "val": "99",
+                  "offset": 78
+                },
+                {
+                  "val": "99",
+                  "offset": 81
+                }
+              ],
+              "location": "ProductInformationSteps.iShouldSeeTheProductAddedToTheCart(String,String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4,
+              5
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Products to Cart",
+    "description": "",
+    "id": "add-products-to-cart",
+    "keyword": "Feature",
+    "uri": "AddProductsToCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Login to Application",
+        "description": "",
+        "id": "login;login-to-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3418204126,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15031624115,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1604078280,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2611271118,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Verify Home Page",
+        "description": "",
+        "id": "login;verify-home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3534647288,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15105432389,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1634461395,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2069191088,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2777231544,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "When I accept the terms and conditions",
+            "match": {
+              "location": "HomeSteps.whenIAcceptTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1118679271,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should be able to see the Home Page",
+            "match": {
+              "location": "HomeSteps.iShouldBeAbleToSeeTheHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Verify Menu Page",
+        "description": "",
+        "id": "login;verify-menu-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3557077227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15166759250,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1565972485,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2070998706,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3103434045,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "When I accept the terms and conditions",
+            "match": {
+              "location": "HomeSteps.whenIAcceptTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1089677421,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should be able to see the Home Page",
+            "match": {
+              "location": "HomeSteps.iShouldBeAbleToSeeTheHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 442646092,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "When I tap the Menu",
+            "match": {
+              "location": "MenuSteps.whenITapTheMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021948849,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I should be able to see all the Menu Items",
+            "match": {
+              "location": "MenuSteps.iShouldBeAbleToSeeAllTheMenuItems()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Scan an Item",
+        "description": "",
+        "id": "login;scan-an-item;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3459132318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15103654278,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I enter the Scan and Go application with john@gmail.com and 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "john@gmail.com",
+                  "offset": 41
+                },
+                {
+                  "val": "123456",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginSteps.iEnterTheScanAndGoApplicationWithEmailAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2144003452,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I press the login button",
+            "match": {
+              "location": "LoginSteps.iPressTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2301611717,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should be able to see the welcome page",
+            "match": {
+              "location": "LoginSteps.iShouldBeAbleToSeeTheWelcomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2434381170,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "When I accept the terms and conditions",
+            "match": {
+              "location": "HomeSteps.whenIAcceptTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1255456957,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should be able to see the Home Page",
+            "match": {
+              "location": "HomeSteps.iShouldBeAbleToSeeTheHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2213570005,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "When I tap the Scan Icon",
+            "match": {
+              "location": "ScanSteps.whenITapTheScanIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72698,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I should be able to see the Scanner Screen",
+            "match": {
+              "location": "ScanSteps.iShouldBeAbleToSeeTheScannerScreen()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "As a User\r\nI should be able to access the Scan And Go app with valid credentials",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
