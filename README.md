@@ -16,7 +16,7 @@ Mobile Test Framework was designed in JAVA following BDD style to propose a comm
 
 Cucumber Feature:
 
-```csharp
+```java
 Feature: Login
   As a User
     I should be able to access the Scan And Go app with valid credentials
@@ -34,7 +34,7 @@ Feature: Login
 
 JUnit Example Page Object:
 
-```csharp
+```java
 
 import Woolworths.Base.PageBase;
 import io.appium.java_client.MobileElement;
